@@ -1,0 +1,7 @@
+The code can be analyzed to be solved as follows:
+<br>
+We can process the given numbers by utilizing the rightmost and the leftmost entries and indexes of the collection. Using the smaller of the two as the length/height of the container and the distance between the two as the width of the container, we can get the required areas from the collection. Then, we can sort out the largest area and get the value of the max area of the container.
+<br>
+A thing to note is that we keep on checking until the leftmost index becomes larger than the rightmost index. We keep checking this inside the loop and update either the leftmost index or the rightmost index depending on which is smaller (if smaller, leftmost else, rightmost).
+<br>
+A thing to note with this approach is that the container which we are calculating is correct in the sense that suppose we arbitrarily take a value in the middle and see that we can form a container with it from both sides and one of them is the correct or larger one. We could use this methoc as a brute force way of finding the largest container area. But by using the context of the leftmost and the rightmost index, we can skip a lot of the checks and still get the required maximum area contianer.
